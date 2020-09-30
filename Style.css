@@ -43,4 +43,6 @@ header{
 p{
     text-align: center;
     font-size: 50px;
+    font-family: 'Righteous',cursive;
+    color: rgb(150,150,150);
 }
