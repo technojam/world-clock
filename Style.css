@@ -3,7 +3,11 @@
     padding: 0%;
 }
 body{
-    background-color: antiquewhite;
+    background-color: #EEF0F4;
+}
+h1{
+    text-align: left;
+    width: 50%;
 }
 nav{
     height: 50px;
@@ -11,15 +15,16 @@ nav{
     width: auto;
     margin: 0 auto;
     text-transform: uppercase;
-    background-color: #525861;
     text-align: center;
 }
 .nav{
-    color: white;
+    color: #EEF0F4;
 }
 header{
-    background-color: #2f3640;
-    color: aliceblue;
+    background: #EEF0F4;
+border-radius: 1%;
+box-shadow: inset 9.91px 9.91px 15px #D9DADE, inset -9.91px -9.91px 15px #FFFFFF;
+    color: black;
     text-align: center;
     padding: 25pt;
     font-size: 25px;
@@ -28,10 +33,14 @@ header{
     position: relative;
     align-self: center;
     
+    margin-top: 10px;
 }
 .box select{
-    background: #2f3640;
-    color: antiquewhite;
+    
+    background: #EEF0F4;
+border-radius: 1%;
+box-shadow: inset 9.91px 9.91px 15px #D9DADE, inset -9.91px -9.91px 15px #FFFFFF;
+    color: antique#EEF0F4;
     padding: 10px;
     width: 250px;
     margin-top: 5px;
@@ -44,3 +53,86 @@ p{
     text-align: center;
     font-size: 50px;
 }
+
+/* Analog clock */
+.clock-container{
+    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+.clock {
+    border-radius: 100%;
+    font-family: "Montserrat";
+    border: 5px solid white;
+    background: #EEF0F4;
+box-shadow: inset 9.91px 9.91px 15px #D9DADE, inset -9.91px -9.91px 15px #FFFFFF;
+  }
+  
+  .wrap {
+    overflow: hidden;
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+  }
+  
+  .minute,
+  .hour {
+    position: absolute;
+    height: 100px;
+    width: 6px;
+    margin: auto;
+    top: -27%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: black;
+    transform-origin: bottom center;
+    transform: rotate(0deg);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+  .minute {
+    position: absolute;
+    height: 130px;
+    width: 4px;
+    top: -38%;
+    left: 0;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    transform: rotate(90deg);
+  }
+  
+  .second {
+    position: absolute;
+    height: 90px;
+    width: 2px;
+    margin: auto;
+    top: -26%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 4px;
+    background: #FF4B3E;
+    transform-origin: bottom center;
+    transform: rotate(180deg);
+    z-index: 1;
+  }
+  
+  .dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    background: white;
+    border: 2px solid #1b1b1b;
+    border-radius: 100px;
+    margin: auto;
+    z-index: 1;
+  }
