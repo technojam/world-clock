@@ -1,46 +1,65 @@
-*{
-    margin: 0%;
-    padding: 0%;
-}
-body{
-    background-color: antiquewhite;
-}
-nav{
-    height: 50px;
-    display: block;
-    width: auto;
-    margin: 0 auto;
-    text-transform: uppercase;
-    background-color: #525861;
-    text-align: center;
-}
-.nav{
-    color: white;
-}
-header{
-    background-color: #2f3640;
-    color: aliceblue;
-    text-align: center;
-    padding: 25pt;
-    font-size: 25px;
-}
-.box{
-    position: relative;
-    align-self: center;
-    
-}
-.box select{
-    background: #2f3640;
-    color: antiquewhite;
-    padding: 10px;
-    width: 250px;
-    margin-top: 5px;
-    font-size: 15px;
-    border: none;
-    border-radius: 7pt;
-    outline: none;
-}
-p{
-    text-align: center;
-    font-size: 50px;
-}
+/*  #222831 -- darkest blue
+    #30475e -- medium blue
+    #f2a365 -- orange peace for headings or underlines 
+    #ececec -- white compulsory */
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    body{
+        background-color: #222831;
+    }
+    nav{
+        height: 50px;
+        display: block;
+        width: auto;
+        margin: 0 auto;
+        text-transform: uppercase;
+        background-color: #525861;
+        text-align: center;
+    }
+    .nav{
+        color: white;
+    }
+    header{
+        background-color: #222831;
+        color: #ececec;
+        margin: 7%;
+        padding: 25pt;
+        font-size: 1.5em;
+    }
+    .underline{
+        text-decoration: underline;
+        text-underline-position: under;
+        text-decoration-color: #f2a365;
+    }
+    .box{
+        position: relative;
+        align-self: center;
+        
+    }
+    .box select{
+        background: #2f3640;
+        color: antiquewhite;
+        padding: 10px;
+        width: 250px;
+        margin-top: 5px;
+        font-size: 15px;
+        border: none;
+        border-radius: 7pt;
+        outline: none;
+    }
+    p{
+        text-align: center;
+        font-size: 50px;
+    }
+    #clock{
+        text-align: center;
+        font-size: 50px;
+    }
+    #map{
+    width: 600px;
+    height: 400px;
+    padding: 18px;
+    }
+
