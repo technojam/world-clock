@@ -1,6 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
+    font-family: cursive;
 }
 body{
     background-color: antiquewhite;
@@ -13,17 +14,23 @@ nav{
     text-transform: uppercase;
     background-color: #525861;
     text-align: center;
+    padding: 10px;
 }
 .nav{
     color: white;
 }
 header{
-    background-color: #2f3640;
-    color: aliceblue;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    color: lightgray;
+    text-shadow: 2px 2px 5px gray;
     text-align: center;
-    padding: 25pt;
+    padding: 40pt;
     font-size: 25px;
 }
+
 .box{
     position: relative;
     align-self: center;
@@ -33,14 +40,18 @@ header{
     background: #2f3640;
     color: antiquewhite;
     padding: 10px;
+    margin-top: 2px;
     width: 250px;
-    margin-top: 5px;
     font-size: 15px;
-    border: none;
-    border-radius: 7pt;
+    border: 1px dashed lightgray;
+    border-radius: 5px;
     outline: none;
+    text-transform: uppercase;
 }
+
 p{
+    padding: 100px;
+    color: green;
     text-align: center;
     font-size: 50px;
 }
