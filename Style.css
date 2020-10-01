@@ -1,11 +1,13 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
 }
-body{
+
+body {
     background-color: antiquewhite;
 }
-nav{
+
+nav {
     height: 50px;
     display: block;
     width: auto;
@@ -14,22 +16,25 @@ nav{
     background-color: #525861;
     text-align: center;
 }
-.nav{
+
+.nav {
     color: white;
 }
-header{
+
+header {
     background-color: #2f3640;
     color: aliceblue;
     text-align: center;
     padding: 25pt;
     font-size: 25px;
 }
-.box{
+
+.box {
     position: relative;
     align-self: center;
-    
 }
-.box select{
+
+.box select {
     background: #2f3640;
     color: antiquewhite;
     padding: 10px;
@@ -40,7 +45,43 @@ header{
     border-radius: 7pt;
     outline: none;
 }
-p{
+
+p {
+    padding: 2rem;
     text-align: center;
-    font-size: 50px;
+    font-size: 2rem;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 767px) {
+    header {
+        font-size: 20px;
+    }
+    .box {
+        padding: 0 5px 0 5px;
+    }
+    .box select {
+        width: 100%;
+        font-size: 1rem;
+    }
+    p {
+        padding: 1rem;
+        font-size: 1.25rem;
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    header {
+        font-size: 20px;
+    }
+    .box select {
+        font-size: 1rem;
+    }
+    p {
+        padding-top: 1.5rem;
+        font-size: 1.5rem;
+    }
 }
