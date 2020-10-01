@@ -1,28 +1,3 @@
-<<<<<<< HEAD
-var d = new Date();
-document.getElementById("Date").innerHTML = d;
-function showTime(){
-    var date=new Date();
-    var h= date.getHours();
-    var m= date.getMinutes();
-    var s= date.getSeconds();
-    var session = "AM";
-    if(h==0){
-        h=12;
-    }
-    if(h>12){
-        h=h-12;
-        session="PM";
-    }
-    h=(h<10) ? "0" + h : h;
-    m=(m<10) ? "0" + m : m;
-    a=(s<10) ? "0" + s : s;
-    var time= h + ":" + m + ":" + s + " " + session;
-    document.getElementById("Date").innerHTML = time;
-    setTimeout(showTime,1000);
-}
-=======
-
 function showTime(){
 	d = new Date(); //Getting the local date object
    
@@ -42,6 +17,26 @@ function showTime(){
 
 	else if(checkDropdown == 'newYork'){
 		nd = new Date(utc + (3600000*(-4)));
+	}
+
+	else if(checkDropdown == 'japan'){
+		nd = new Date(utc + (3600000*9));
+	}
+
+	else if(checkDropdown == 'uae'){
+		nd = new Date(utc + (3600000*4));
+	}
+	
+	else if(checkDropdown == 'moscow'){
+		nd = new Date(utc + (3600000*3));
+	}
+
+	else if(checkDropdown == 'france'){
+		nd = new Date(utc + (3600000*2));
+	}
+
+	else if(checkDropdown == 'africa'){
+		nd = new Date(utc + (3600000*2));
 	}
 	
 	// Changed the timming in 12 hours format
@@ -64,5 +59,4 @@ function showTime(){
 	document.getElementById("clock").innerHTML = res[1]+" "+session;
 	setTimeout(showTime,1000);
 }
->>>>>>> upstream/master
 showTime();

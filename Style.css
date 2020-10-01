@@ -1,53 +1,3 @@
-<<<<<<< HEAD
-*{
-    margin: 0%;
-    padding: 0%;
-}
-body{
-    background-color: antiquewhite;
-}
-nav{
-    height: 50px;
-    display: block;
-    width: auto;
-    margin: 0 auto;
-    text-transform: uppercase;
-    background-color: #525861;
-    text-align: center;
-}
-.nav{
-    color: white;
-}
-header{
-    background-color: #2f3640;
-    color: aliceblue;
-    text-align: center;
-    padding: 25pt;
-    font-size: 25px;
-}
-.box{
-    position: relative;
-    align-self: center;
-    
-}
-.box select{
-    background: #2f3640;
-    color: antiquewhite;
-    padding: 10px;
-    width: 250px;
-    margin-top: 5px;
-    font-size: 15px;
-    border: none;
-    border-radius: 7pt;
-    outline: none;
-}
-p{
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Righteous',cursive;
-    color: rgb(150,150,150);
-}
-=======
 /*  #222831 -- darkest blue
     #30475e -- medium blue
     #f2a365 -- orange peace for headings or underlines 
@@ -155,4 +105,3 @@ p{
     margin-left: 100px;
     margin-right: 100px;
     }
->>>>>>> upstream/master
