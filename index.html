@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVhttps://github.com/lukicenturi/world-clockA1r/zQ==" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
     <link rel="stylesheet" href="Style.css">
     <script src="map.js"></script>
@@ -40,11 +40,14 @@
             </div>
         </ul>
     </nav>
-    <div id="clock">10:10:01</div>
+    <div id="clock-wrapper">
+        <div id="clock"></div>
+    </div>
     <!--FAQs-->
-    <h2 class="faq">FAQs:</h2> 
-    <div id="map"></div>
-
+    <h2 class="faq">FAQs:</h2>
+    <div id="map-wrapper">
+        <div id="map"></div>
+    </div>
 </body>
 <script>
 
