@@ -2,7 +2,7 @@
 It is a web app that lets the user see the current time of a country. 
 
 ## Description
-It is an web app which tells the user about the respective countries as one hovers over the world map or select a particular country from the
+It is a web app which tells the user about the respective countries as one hovers over the world map or select a particular country from the
 dropdown list. It shows the time in digital format.
 
 ## Technologies Used
