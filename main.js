@@ -1,4 +1,3 @@
-
 function showTime(){
 	d = new Date(); //Getting the local date object
    
@@ -18,6 +17,26 @@ function showTime(){
 
 	else if(checkDropdown == 'newYork'){
 		nd = new Date(utc + (3600000*(-4)));
+	}
+
+	else if(checkDropdown == 'japan'){
+		nd = new Date(utc + (3600000*9));
+	}
+
+	else if(checkDropdown == 'uae'){
+		nd = new Date(utc + (3600000*4));
+	}
+	
+	else if(checkDropdown == 'moscow'){
+		nd = new Date(utc + (3600000*3));
+	}
+
+	else if(checkDropdown == 'france'){
+		nd = new Date(utc + (3600000*2));
+	}
+
+	else if(checkDropdown == 'africa'){
+		nd = new Date(utc + (3600000*2));
 	}
 	
 	// Changed the timming in 12 hours format
