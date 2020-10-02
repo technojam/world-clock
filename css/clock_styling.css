@@ -102,7 +102,6 @@
 .clocks{
 	display: flex;
 	justify-content: space-evenly;
-	margin: 10%;
 }
 .clock{
 	height:500px;
