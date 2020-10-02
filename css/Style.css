@@ -142,7 +142,6 @@ select{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	border: 1px solid white;
 	height: 600px;
 }
 
@@ -160,7 +159,6 @@ select{
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 20px;
 	color: white;
-	border: 1px solid black;
 }
 .analog-country h3{
 	border-bottom: 1px solid aliceblue;
