@@ -21,4 +21,4 @@ dropdown list. It shows the time in digital format.
 -   Open index.html with the browser
 
 ## Screenshots
-
+![About Page](https://github.com/Aditya-shrivastav/world-clock/blob/master/images/world-clock-ss.png)
