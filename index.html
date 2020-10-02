@@ -1,68 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			type="image/x-icon"
+			href="docs/images/favicon.ico"
+		/>
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
-    <link rel="stylesheet" href="Style.css">
-    <script src="map.js"></script>
-    <title>World Clock</title>
-</head>
-<body>
-    <!--Navigation Bar-->
-    <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#clock">Clock</a>
-        <a href="#FAQ">FAQs</a>
-      </div>
-      <header>
-        <h1>
-            JS-World<br>
-            <span class="underline">Clock</span>
-        </h1>
-    </header>
-    <nav class="navigation_bar">
-        <ul class="nav">
-            <div class="box">
-                <select id="list">
-                        <option value="india">India</option>
-                        <option value="california">California</option>
-                        <option value="newYork">New York(U.S.A)</option>
-                        <option value="japan">Japan</option>
-                        <option value="uae">United Arab Emirates(U.A.E)</option>
-                        <option value="moscow">Moscow(Russia)</option>
-                        <option value="france">France</option>
-                        <option value="africa">Africa(central)</option>
-                </select>
-            </div>
-        </ul>
-    </nav>
-    <div id="clock">10:10:01</div>
-    <!--FAQs-->
-    <h2 class="faq">FAQs:</h2> 
-    <div id="map"></div>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+			integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+			crossorigin=""
+		/>
+		<script
+			src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+			integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+			crossorigin=""
+		></script>
+		<link rel="stylesheet" href="Style.css" />
+		<link rel="stylesheet" href="clock_styling.css">
+		<script src="map.js"></script>
+		<title>World Clock</title>
+	</head>
+	<body>
+		<!--Navigation Bar-->
+		<div class="navbar">
+			<a href="#home">Home</a>
+			<a href="#clock">Clock</a>
+			<a href="#FAQ">FAQs</a>
+		</div>
+		<header>
+			<h1>
+				JS-World<br />
+				<span class="underline">Clock</span>
+			</h1>
+		</header>
+		<nav class="navigation_bar">
+			<ul class="nav">
+				<div class="box">
+					<select id="list">
+						<option value="india">India</option>
+						<option value="california">California</option>
+						<option value="newYork">New York(U.S.A)</option>
+						<option value="japan">Japan</option>
+						<option value="uae">United Arab Emirates(U.A.E)</option>
+						<option value="moscow">Moscow(Russia)</option>
+						<option value="france">France</option>
+						<option value="africa">Africa(central)</option>
+					</select>
+				</div>
+			</ul>
+		</nav>
+		<div id="clock">10:10:01</div>
 
-</body>
-<script>
+		<!-- analog clock -->
+		<div id="alignment">
+			<div class="clock1">
+				<div class="hand hour" data-hour-hand=""></div>
+				<div class="hand minute" data-minute-hand></div>
+				<div class="hand second" data-second-hand></div>
+				<div class="number number1">1</div>
+				<div class="number number2">2</div>
+				<div class="number number3">3</div>
+				<div class="number number4">4</div>
+				<div class="number number5">5</div>
+				<div class="number number6">6</div>
+				<div class="number number7">7</div>
+				<div class="number number8">8</div>
+				<div class="number number9">9</div>
+				<div class="number number10">10</div>
+				<div class="number number11">11</div>
+				<div class="number number12">12</div>
+			</div>
+		</div>
 
-	var mymap = L.map('map').setView([51.505, -0.09], 8);  //13
+		<div>
+			<h3>INDIA(local time zone)</h3>
+			<br />
+			<img
+				class="flag"
+				src="./images/INDIA FLAG.webp"
+				alt="INDIAN FLAG"
+			/>
+		</div>
 
-	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-		maxZoom: 18,
-		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-        id: 'mapbox.streets',
-        accessToken: 'sk.eyJ1IjoibW9oaXRiaGF0aWExMiIsImEiOiJja2ZwOG1kNzUwOGt4MnhtdHR5ejAxOXlqIn0.gPSI6lPxkmtxsbYdESC48w'
-	}).addTo(mymap);
+		<!--FAQs-->
+		<h2 class="faq">FAQs:</h2>
+		<div id="map"></div>
+	</body>
+	<script>
+		var mymap = L.map("map").setView([51.505, -0.09], 8); //13
 
-L.timezones.bindPopup(function (layer) {
-    return new Date().toLocaleString("en-GB", {timeZone:layer.feature.properties.tz_name1st, timeZoneName:"short"});   //.time_zone
-}).addTo(mymap);
+		L.tileLayer(
+			"https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw",
+			{
+				maxZoom: 18,
+				attribution:
+					'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+					'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+					'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+				id: "mapbox.streets",
+				accessToken:
+					"sk.eyJ1IjoibW9oaXRiaGF0aWExMiIsImEiOiJja2ZwOG1kNzUwOGt4MnhtdHR5ejAxOXlqIn0.gPSI6lPxkmtxsbYdESC48w",
+			}
+		).addTo(mymap);
 
-</script>
-<script src="main.js"></script>
+		L.timezones
+			.bindPopup(function (layer) {
+				return new Date().toLocaleString("en-GB", {
+					timeZone: layer.feature.properties.tz_name1st,
+					timeZoneName: "short",
+				}); //.time_zone
+			})
+			.addTo(mymap);
+	</script>
+	<script src="main.js"></script>
 </html>
