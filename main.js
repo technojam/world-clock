@@ -28,20 +28,8 @@ function showTime() {
 	// Changed the timming in 12 hours format
 	var res = nd.toLocaleString();
 	res = res.split(" ");
-	var ans = res[1].split(":");
-
-	if (ans[0] > 12) {
-		var t = parseInt(ans[0]) - 12;
-		ans[0] = t.toString();
-		session = "PM";
-	}
-
-	if (ans[0] == 0) {
-		ans[0] = "12";
-	}
-
-	res[1] = ans.join(":");
-
+	session = res[2];
+	
 	document.getElementById("clock").innerHTML = res[1] + " " + session;
 	setTimeout(showTime, 1000);
 }
