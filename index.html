@@ -8,7 +8,7 @@
 			type="image/x-icon"
 			href="docs/images/favicon.ico"
 		/>
-
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 		<link
 			rel="stylesheet"
 			href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
@@ -20,7 +20,7 @@
 			integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
 			crossorigin=""
 		></script>
-		<link rel="stylesheet" href="Style.css" />
+		<link rel="stylesheet" href="./css/Style.css" />
 		<script src="map.js"></script>
 		<title>World Clock</title>
 	</head>
@@ -59,39 +59,97 @@
 
 		<!-- analog clock -->
 		<div id="alignment">
-			<div class="clock1">
-				<div class="hand hour" data-hour-hand=""></div>
-				<div class="hand minute" data-minute-hand></div>
-				<div class="hand second" data-second-hand></div>
-				<div class="number number1">1</div>
-				<div class="number number2">2</div>
-				<div class="number number3">3</div>
-				<div class="number number4">4</div>
-				<div class="number number5">5</div>
-				<div class="number number6">6</div>
-				<div class="number number7">7</div>
-				<div class="number number8">8</div>
-				<div class="number number9">9</div>
-				<div class="number number10">10</div>
-				<div class="number number11">11</div>
-				<div class="number number12">12</div>
+			<div class="clocks">
+				<div class="india clock">
+					<div class="analog">
+						<div class="hand hour" india-hour-hand=""></div>
+						<div class="hand minute" india-minute-hand></div>
+						<div class="hand second" india-second-hand></div>
+						<div class="number number1">1</div>
+						<div class="number number2">2</div>
+						<div class="number number3">3</div>
+						<div class="number number4">4</div>
+						<div class="number number5">5</div>
+						<div class="number number6">6</div>
+						<div class="number number7">7</div>
+						<div class="number number8">8</div>
+						<div class="number number9">9</div>
+						<div class="number number10">10</div>
+						<div class="number number11">11</div>
+						<div class="number number12">12</div>
+					</div>
+					<div class="analog-country">
+						<h3>India (UTC Standard)</h3>
+						<img class="flag" src="./images/INDIA FLAG.webp" alt="indian-flag" width="70px" height="50px" /> 
+					</div>	
+				</div>
+				<div class="chicago clock">
+					<div class="analog">
+						<div class="hand hour" chicago-hour-hand=""></div>
+						<div class="hand minute" chicago-minute-hand></div>
+						<div class="hand second" chicago-second-hand></div>
+						<div class="number number1">1</div>
+						<div class="number number2">2</div>
+						<div class="number number3">3</div>
+						<div class="number number4">4</div>
+						<div class="number number5">5</div>
+						<div class="number number6">6</div>
+						<div class="number number7">7</div>
+						<div class="number number8">8</div>
+						<div class="number number9">9</div>
+						<div class="number number10">10</div>
+						<div class="number number11">11</div>
+						<div class="number number12">12</div>
+					</div>
+					<div class="analog-country">
+						<h3>Chicago (U.S.A)</h3>
+						<img class="flag" src="./images/usa.jpg" alt="usa-flag" width="70px" height="50px" /> 
+					</div>	
+				</div>
+				<div class="japan clock">
+					<div class="analog">
+						<div class="hand hour" japan-hour-hand=""></div>
+						<div class="hand minute" japan-minute-hand></div>
+						<div class="hand second" japan-second-hand></div>
+						<div class="number number1">1</div>
+						<div class="number number2">2</div>
+						<div class="number number3">3</div>
+						<div class="number number4">4</div>
+						<div class="number number5">5</div>
+						<div class="number number6">6</div>
+						<div class="number number7">7</div>
+						<div class="number number8">8</div>
+						<div class="number number9">9</div>
+						<div class="number number10">10</div>
+						<div class="number number11">11</div>
+						<div class="number number12">12</div>
+					</div>
+					<div class="analog-country">
+						<h3>Japan</h3>
+						<img class="flag" src="./images/japan.svg.png" alt="japan-flag" width="70px" height="50px" /> 
+					</div>	
+				</div>
 			</div>
 		</div>
 
-		<div>
-			<h3>INDIA(local time zone)</h3>
-			<br />
-			<img
-				class="flag"
-				src="./images/INDIA FLAG.webp"
-				alt="INDIAN FLAG"
-			/>
-		</div>
 
 		<!--FAQs-->
 		<span class="anchor" id="faq"></span>
 		<h2 class="faq">FAQs:</h2>
 		<div id="map"></div>
+		<footer>
+			<div class="footer">
+				<div class="contact">
+					<span>Contact Us</span>
+				</div>
+				<div class="social-media">
+					<a  href="https://www.facebook.com/teamtechnojam" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a  href="https://www.linkedin.com/company/technojam/" target="_blank"><i class="fa fa-linkedin"></i></a>
+					<a  href="https://twitter.com/technojam_gu" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a  href="https://www.instagram.com/teamtechnojam/" target="_blank"><i class="fa fa-instagram"></i></a>
+				</div>
+			</div>
+		</footer>
 	</body>
 	<script>
 		var mymap = L.map("map").setView([51.505, -0.09], 8); //13
