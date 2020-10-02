@@ -1,3 +1,5 @@
+var nd = new Date();
+
 function showTime() {
 	d = new Date(); //Getting the local date object
 
@@ -43,6 +45,7 @@ function showTime() {
 	res[1] = ans.join(":");
 
 	document.getElementById("clock").innerHTML = res[1] + " " + session;
+	document.getElementById("country").innerHTML = checkDropdown;
 	setTimeout(showTime, 1000);
 }
 showTime();
@@ -54,7 +57,7 @@ const minuteHand = document.querySelector("[data-minute-hand]");
 const secondHand = document.querySelector("[data-second-hand]");
 
 function setClock() {
-	const currentDate = new Date();
+	const currentDate = nd;
 	const secondsRatio = currentDate.getSeconds() / 60;
 	const minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60;
 	const hoursRatio = (minutesRatio + currentDate.getHours()) / 12;
