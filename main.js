@@ -1,3 +1,4 @@
+//Dropdown menu
 function showTime() {
 	d = new Date(); //Getting the local date object
 
@@ -47,6 +48,7 @@ function showTime() {
 }
 showTime();
 
+//Analog Clock
 setInterval(setClock, 1000);
 
 const IndiahourHand = document.querySelector("[india-hour-hand]");
@@ -96,3 +98,13 @@ function setClock() {
 function setRotation(element, rotationRatio) {
 	element.style.setProperty("--rotation", rotationRatio * 360);
 }
+
+//FAQs section
+
+$('.acc h3').click(function(){
+	$(this).next('.content').slideToggle();
+	$(this).parent().toggleClass('active');
+	$(this).parent().siblings().children('.content').slideUp();
+	$(this).parent().siblings().removeClass('active');
+});
+
