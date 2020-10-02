@@ -1,0 +1,166 @@
+/*  #222831 -- darkest blue
+    #30475e -- medium blue
+    #f2a365 -- orange peace for headings or underlines 
+    #ececec -- white compulsory
+*/
+@import url("clock_styling.css");
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: #222831;
+}
+nav{
+    height: 100px;
+    display: block;
+    width: auto;
+    margin: 0 ;
+    text-transform: uppercase;
+    background-color: #525861;
+    text-align: center;
+    border: 1px solid black;
+}
+.nav{
+    color: white;
+}
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.main {
+    margin-top: 30px; 
+}
+header {
+    padding: 50px 16px 10px;
+    background: rgb(31, 27, 27);
+    color: #f1f1f1;
+    text-align: center;
+    }
+.underline{
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #f2a365;
+}
+.box{
+    display:grid;
+    justify-content: center;
+    margin:15px;
+    font-size: 20px;
+}
+.box select{
+    background: #2f3640;
+    color: antiquewhite;
+    padding: 10px;
+    width: 250px;
+    margin-top: 5px;
+    font-size: 15px;
+    border: none;
+    border-radius: 7pt;
+    outline: none;
+    z-index:1;
+}
+p{
+    text-align: center;
+    font-size: 50px;
+}
+.faq{
+    color: #ececec;
+    margin: 5%;
+    text-decoration: underline;
+    text-decoration-color: #f2a365;
+    font-size: 30px;
+}
+#clock{
+    width: 35%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 70px;
+    border: 2px solid white;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+#map{
+    width: 70%x;
+    height: 400px;
+    padding: 18px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+footer{
+    width:auto;
+    height: 100px;
+    background-color : black;
+    font-size:30px;
+}
+.footer{
+    text-align: center;
+    color:rgb(51, 153, 255);
+}
+.footer .contact span{
+    font-size: 30px;
+    border-bottom: 1px solid gray;
+}
+a .fa{
+    font-size: 30px;
+    color:rgb(51, 153, 255);
+    width:40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    padding:1px;
+    margin:10px 10px 5px 10px;
+}
+select{
+    overflow-y: auto;
+}
+#alignment{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 600px;
+}
+
+.india, .japan, .chicago{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap:20px;
+}
+.analog-country{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	padding:10px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 20px;
+	color: white;
+}
+.analog-country h3{
+	border-bottom: 1px solid aliceblue;
+	margin-bottom:10px
+}
