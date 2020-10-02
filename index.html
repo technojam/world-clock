@@ -26,70 +26,81 @@
 	</head>
 	<body>
 		<!--Navigation Bar-->
-		<div class="navbar">
-			<a href="#home">Home</a>
-			<a href="#clock">Clock</a>
-			<a href="#FAQ">FAQs</a>
-		</div>
 		<header>
-			<h1>
-				JS-World<br />
-				<span class="underline">Clock</span>
-			</h1>
+			<nav>
+				<a href="#home">Home</a>
+				<a href="#clock">Clock</a>
+				<a href="#FAQ">FAQs</a>
+			</nav>
 		</header>
-		<nav class="navigation_bar">
-			<ul class="nav">
-				<div class="box">
-					<select id="list">
-						<option value="india">India</option>
-						<option value="california">California</option>
-						<option value="newYork">New York(U.S.A)</option>
-						<option value="japan">Japan</option>
-						<option value="uae">United Arab Emirates(U.A.E)</option>
-						<option value="moscow">Moscow(Russia)</option>
-						<option value="france">France</option>
-						<option value="africa">Africa(central)</option>
-					</select>
-				</div>
-			</ul>
-		</nav>
-		<div id="clock">10:10:01</div>
-
-		<!-- analog clock -->
-		<div id="alignment">
-			<div class="clock1">
-				<div class="hand hour" data-hour-hand=""></div>
-				<div class="hand minute" data-minute-hand></div>
-				<div class="hand second" data-second-hand></div>
-				<div class="number number1">1</div>
-				<div class="number number2">2</div>
-				<div class="number number3">3</div>
-				<div class="number number4">4</div>
-				<div class="number number5">5</div>
-				<div class="number number6">6</div>
-				<div class="number number7">7</div>
-				<div class="number number8">8</div>
-				<div class="number number9">9</div>
-				<div class="number number10">10</div>
-				<div class="number number11">11</div>
-				<div class="number number12">12</div>
+		
+		<main>
+			<div class="title-bar">
+				<h1>
+					JS-World<br />
+					<span class="underline">Clock</span>
+				</h1>
 			</div>
-		</div>
+			
 
-		<div>
-			<h3>INDIA(local time zone)</h3>
-			<br />
-			<img
-				class="flag"
-				src="./images/INDIA FLAG.webp"
-				alt="INDIAN FLAG"
-			/>
-		</div>
+			<div class="options-box">
+				<ul class="options">
+					<div class="box">
+						<select id="list">
+							<option value="india">India</option>
+							<option value="california">California</option>
+							<option value="newYork">New York(U.S.A)</option>
+							<option value="japan">Japan</option>
+							<option value="uae">United Arab Emirates(U.A.E)</option>
+							<option value="moscow">Moscow(Russia)</option>
+							<option value="france">France</option>
+							<option value="africa">Africa(central)</option>
+						</select>
+					</div>
+				</ul>
+			</div>
 
-		<!--FAQs-->
-		<h2 class="faq">FAQs:</h2>
-		<div id="map"></div>
+
+			<div id="clock">10:10:01</div>
+
+
+			<!-- analog clock -->
+			<div id="alignment">
+				<div class="clock1">
+					<div class="hand hour" data-hour-hand=""></div>
+					<div class="hand minute" data-minute-hand></div>
+					<div class="hand second" data-second-hand></div>
+					<div class="number number1">1</div>
+					<div class="number number2">2</div>
+					<div class="number number3">3</div>
+					<div class="number number4">4</div>
+					<div class="number number5">5</div>
+					<div class="number number6">6</div>
+					<div class="number number7">7</div>
+					<div class="number number8">8</div>
+					<div class="number number9">9</div>
+					<div class="number number10">10</div>
+					<div class="number number11">11</div>
+					<div class="number number12">12</div>
+				</div>
+			</div>
+
+
+			<div class="local-time-zone">
+				<h3>INDIA (Local Time Zone)</h3>
+				<img class="flag" src="./images/INDIA FLAG.webp" alt="INDIAN FLAG"/>
+			</div>
+
+
+			<!--FAQs-->
+			<h2 class="faq">FAQs:</h2>
+			<div id="map"></div>
+		</main>
 	</body>
+
+
+
+
 	<script>
 		var mymap = L.map("map").setView([51.505, -0.09], 8); //13
 

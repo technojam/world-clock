@@ -7,60 +7,57 @@
 	margin: 0%;
 	padding: 0%;
 }
+
+header {
+	margin-bottom: 20px;
+}
+
 body {
 	background-color: #222831;
 }
+
 nav {
-	height: 50px;
-	display: block;
-	padding-top: 50px;
-	width: auto;
-	margin: 0 auto;
-	text-transform: uppercase;
-	background-color: #525861;
-	text-align: center;
-}
-.nav {
-	color: white;
-}
-/* The navigation bar */
-.navbar {
-	overflow: hidden;
-	background-color: #333;
+	background-color: #222831;
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: +1;
 }
 
-.navbar a {
+nav a {
 	float: left;
 	display: block;
 	color: #f2f2f2;
-	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 }
 
-.navbar a:hover {
+nav a:hover {
 	background: #ddd;
 	color: black;
 }
 
-.main {
-	margin-top: 30px;
+/* Main */
+main {
+	margin-bottom: 20px;
+	width: 100%;
 }
-header {
+.title-bar {
 	padding: 50px 16px 10px;
 	background: rgb(31, 27, 27);
 	color: #f1f1f1;
 	text-align: center;
+	margin-bottom: 20px;
 }
 .underline {
 	text-decoration: underline;
 	text-underline-position: under;
 	text-decoration-color: #f2a365;
 }
+
+.options-box {
+	text-align: center;
+}
+
 .box {
 	position: relative;
 	align-self: center;
@@ -71,48 +68,62 @@ header {
 	padding: 10px;
 	width: 250px;
 	margin-top: 5px;
-	font-size: 15px;
+	font-size: 1em;
 	border: none;
 	border-radius: 7pt;
 	outline: none;
 }
-h3 {
-	text-align: center;
-	margin: auto;
-	color: white;
-}
-.faq {
-	color: #ececec;
-	margin: 5%;
-	text-decoration: underline;
-	text-decoration-color: #f2a365;
-	font-size: 30px;
-}
+
 #clock {
-	width: 600px;
-	margin-top: 90px;
-	font-size: 70px;
+	width: 40%;
+	margin: 90px auto;
+	font-size: 5em;
 	border: 2px solid white;
-	align-items: center;
 	text-align: center;
 	color: white;
 	padding: 30px;
-	margin-left: 440px;
 }
-#map {
-	width: 1400px;
-	height: 300px;
-	padding: 18px;
-	margin-bottom: 20px;
-	margin-left: 25px;
-}
+
 .clock1 {
 	margin: auto;
 }
-#alignment {
-	margin-top: 100px;
+
+.local-time-zone {
+	width: 300px;
+	margin: auto;
+	text-align: center;
 }
+
+h3 {
+	margin: 30px auto;
+	color: white;
+}
+
 .flag {
 	height: 100px;
-	margin-left: 650px;
+}
+
+.faq {
+	color: #ececec;
+	margin: 5% 0 3% 5%;
+	text-decoration: underline;
+	text-decoration-color: #f2a365;
+	font-size: 2em;
+}
+
+#map {
+	width: 90%;
+	margin: auto;
+	height: 300px;
+	padding: 18px;
+	margin-bottom: 100px;
+}
+
+
+@media screen and (max-width: 768px) {
+	
+	#clock {
+		font-size: 2.5em;
+		padding: 30px;
+	}
 }
