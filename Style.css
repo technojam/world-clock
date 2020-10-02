@@ -76,6 +76,10 @@ header {
 	border-radius: 7pt;
 	outline: none;
 }
+.anchor {
+	position: relative;
+	top: -46px;
+}
 h3 {
 	text-align: center;
 	margin: auto;
