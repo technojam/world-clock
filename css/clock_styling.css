@@ -2,19 +2,18 @@
 *::after,
 *::before {
 	box-sizing: border-box;
-	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.clock1 {
+.analog {
 	width: 300px;
 	height: 300px;
 	border-radius: 50%;
 	background-color: aliceblue;
-	border: 2px solid white;
+	border: 2px solid pink;
 	position: relative;
 	z-index: -1;
 }
-.clock1 .number {
+.analog .number {
 	--rotation: 0;
 	position: absolute;
 	width: 100%;
@@ -23,43 +22,43 @@
 	transform: rotate(var(--rotation));
 	font-size: 1.5rem;
 }
-.clock1 .number1 {
+.analog .number1 {
 	--rotation: 30deg;
 }
-.clock1 .number2 {
+.analog .number2 {
 	--rotation: 60deg;
 }
-.clock1 .number3 {
+.analog .number3 {
 	--rotation: 90deg;
 }
-.clock1 .number4 {
+.analog .number4 {
 	--rotation: 120deg;
 }
-.clock1 .number5 {
+.analog .number5 {
 	--rotation: 150deg;
 }
-.clock1 .number6 {
+.analog .number6 {
 	--rotation: 180deg;
 }
-.clock1 .number7 {
+.analog .number7 {
 	--rotation: 210deg;
 }
-.clock1 .number8 {
+.analog .number8 {
 	--rotation: 240deg;
 }
-.clock1 .number9 {
+.analog .number9 {
 	--rotation: 270deg;
 }
-.clock1 .number10 {
+.analog .number10 {
 	--rotation: 300deg;
 }
-.clock1 .number11 {
+.analog .number11 {
 	--rotation: 330deg;
 }
-.clock1 .number12 {
+.analog .number12 {
 	--rotation: 360deg;
 }
-.clock1 .hand {
+.analog .hand {
 	--rotation: 0;
 	position: absolute;
 	bottom: 50%;
@@ -72,7 +71,7 @@
 	transform: translate(50%) rotate(calc(var(--rotation) * 1deg));
 	transform-origin: bottom;
 }
-.clock1::after {
+.analog::after {
 	content: "";
 	position: absolute;
 	background-color: black;
@@ -84,18 +83,31 @@
 	transform: translate(-50% -50%);
 	border-radius: 50%;
 }
-.clock1 .hand.second {
+.analog .hand.second {
 	width: 3px;
 	height: 45%;
 	background-color: red;
 }
-.clock1 .hand.minute {
+.analog .hand.minute {
 	width: 7px;
 	height: 40%;
 	background-color: black;
 }
-.clock1 .hand.hour {
+.analog .hand.hour {
 	width: 10px;
 	height: 35%;
 	background-color: black;
+}
+
+.clocks{
+	display: flex;
+	justify-content: space-evenly;
+	margin: 10%;
+}
+.clock{
+	height:500px;
+	padding:50px;
+	margin:50px;
+	border:1px solid white;
+	border-radius: 1em;
 }

@@ -49,18 +49,48 @@ showTime();
 
 setInterval(setClock, 1000);
 
-const hourHand = document.querySelector("[data-hour-hand]");
-const minuteHand = document.querySelector("[data-minute-hand]");
-const secondHand = document.querySelector("[data-second-hand]");
+const IndiahourHand = document.querySelector("[india-hour-hand]");
+const IndiaminuteHand = document.querySelector("[india-minute-hand]");
+const IndiasecondHand = document.querySelector("[india-second-hand]");
+
+const chicagohourHand = document.querySelector("[chicago-hour-hand]");
+const chicagominuteHand = document.querySelector("[chicago-minute-hand]");
+const chicagosecondHand = document.querySelector("[chicago-second-hand]");
+
+const japanhourHand = document.querySelector("[japan-hour-hand]");
+const japanminuteHand = document.querySelector("[japan-minute-hand]");
+const japansecondHand = document.querySelector("[japan-second-hand]");
 
 function setClock() {
-	const currentDate = new Date();
-	const secondsRatio = currentDate.getSeconds() / 60;
-	const minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60;
-	const hoursRatio = (minutesRatio + currentDate.getHours()) / 12;
-	setRotation(secondHand, secondsRatio);
-	setRotation(minuteHand, minutesRatio);
-	setRotation(hourHand, hoursRatio);
+	const indiacurrentDate = new Date();
+	
+	const indiasecondsRatio = indiacurrentDate.getSeconds() / 60;
+	const indiaminutesRatio = (indiasecondsRatio + indiacurrentDate.getMinutes()) / 60;
+	const indiahoursRatio = (indiaminutesRatio + indiacurrentDate.getHours()) / 12;
+
+	var utc = indiacurrentDate.getTime() + indiacurrentDate.getTimezoneOffset() * 60000;
+
+	const chicagoCurrentDate = new Date(utc + 3600000 * -5);
+	const chicagosecondsRatio = chicagoCurrentDate.getSeconds() / 60;
+	const chicagominutesRatio = (chicagosecondsRatio + chicagoCurrentDate.getMinutes()) / 60;
+	const chicagohoursRatio = (chicagominutesRatio + chicagoCurrentDate.getHours()) / 12;
+
+	const japanCurrentDate = new Date(utc + 3600000 * 9);
+	const japansecondsRatio = japanCurrentDate.getSeconds() / 60;
+	const japanminutesRatio = (japansecondsRatio + japanCurrentDate.getMinutes()) / 60;
+	const japanhoursRatio = (japanminutesRatio + japanCurrentDate.getHours()) / 12;
+
+	setRotation(IndiasecondHand, indiasecondsRatio);
+	setRotation(IndiaminuteHand, indiaminutesRatio);
+	setRotation(IndiahourHand, indiahoursRatio);
+
+	setRotation(chicagosecondHand, chicagosecondsRatio);
+	setRotation(chicagominuteHand, chicagominutesRatio);
+	setRotation(chicagohourHand, chicagohoursRatio);
+
+	setRotation(japansecondHand, japansecondsRatio);
+	setRotation(japanminuteHand, japanminutesRatio);
+	setRotation(japanhourHand, japanhoursRatio);
 }
 
 function setRotation(element, rotationRatio) {
