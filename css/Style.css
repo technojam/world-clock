@@ -174,7 +174,7 @@ select{
 h1 {
     text-align: center;
     font-family: 'Oswald', sans-serif;
-    font-size: 60px;
+    font-size: 65px;
     margin: 50px 0 0;
     color: #fff;
 }
@@ -187,7 +187,7 @@ h1 {
 }
 
 .acc h3 {
-    font-size: 25px;
+    font-size: 30px;
     background-color: rgba(0,0,0,0.6);
     color: #fff;
     padding: 15px;
