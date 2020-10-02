@@ -2,7 +2,7 @@
     #30475e -- medium blue
     #f2a365 -- orange peace for headings or underlines 
     #ececec -- white compulsory */
-@import url("./clock_styling.css");
+@import url("clock_styling.css");
 * {
 	margin: 0%;
 	padding: 0%;
