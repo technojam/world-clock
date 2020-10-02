@@ -24,7 +24,17 @@ function showTime() {
 		nd = new Date(utc + 3600000 * 2);
 	} else if (checkDropdown == "africa") {
 		nd = new Date(utc + 3600000 * 2);
-	}
+	}else if (checkDropdown == "afghanistan"){
+		nd = new Date(utc + 3600000 * 4.5);
+	}else if (checkDropdown == "belgium"){
+		nd = new Date(utc + 3600000 * 1);
+	}else if (checkDropdown == "denmark"){
+		nd = new Date(utc + 3600000 * 1);
+	}else if (checkDropdown == "jamaica"){
+		nd = new Date(utc + 3600000 * -5);
+	}else if (checkDropdown == "china"){
+		nd = new Date(utc + 3600000 * 8);
+	}			
 
 	// Changed the timming in 12 hours format
 	var res = nd.toLocaleString();
