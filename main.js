@@ -1,7 +1,7 @@
 //Dropdown menu
 function showTime() {
-	d = new Date(); //Getting the local date object
-
+		d = new Date(); //Getting the local date object
+	
 	countryName = document.getElementById('country-name')
 
 	utc = d.getTime() + d.getTimezoneOffset() * 60000; //converting the time to gmt and in miliseconds for easier conversion of time for different countries
@@ -62,6 +62,12 @@ function showTime() {
 }
 showTime();
 
+//Scroll the list of countries
+document.getElementById("list").addEventListener("scroll", scroll);
+
+function scroll() {
+    document.getElementsByClassName("box").innerHTML = "Scrolled";
+    }
 
 //Analog Clock
 setInterval(setClock, 1000);
