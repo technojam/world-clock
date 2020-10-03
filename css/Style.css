@@ -3,267 +3,376 @@
     #f2a365 -- orange peace for headings or underlines 
     #ececec -- white compulsory
 */
-@import url("clock_styling.css");/*import analog clock css*/
-*{
-    margin: 0%;
-    padding: 0%;
+
+@import url("clock_styling.css");
+/*import analog clock css*/
+
+body {
+  background-color: #222831;
+  margin: 0;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
 }
-body{
-    background-color: #222831;
-    margin: 0;
-    background-size: cover;
-    font-family: 'Roboto', sans-serif;
+
+nav {
+  height: 100px;
+  display: block;
+  width: auto;
+  margin: 0;
+  text-transform: uppercase;
+  background-color: #525861;
+  text-align: center;
+  border: 1px solid black;
 }
-nav{
-    height: 100px;
-    display: block;
-    width: auto;
-    margin: 0 ;
-    text-transform: uppercase;
-    background-color: #525861;
-    text-align: center;
-    border: 1px solid black;
+
+.nav {
+  color: white;
 }
-.nav{
-    color: white;
+
+ul.nav {
+  padding: 0;
+  margin: 0;
 }
+
 /* The navigation bar */
+
 .navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
+  position: sticky;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  background-color: #333;
+  top: 0;
+  z-index: 10;
 }
 
 .navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .navbar a:hover {
-    background: #ddd;
-    color: black;
+  background: #ddd;
+  color: black;
 }
 
 .main {
-    margin-top: 30px; 
-}
-header {
-    padding: 50px 16px 10px;
-    background: rgb(31, 27, 27);
-    color: #f1f1f1;
-    text-align: center;
-    }
-.underline{
-    text-decoration: underline;
-    text-underline-position: under;
-    text-decoration-color: #f2a365;
-}
-.box{
-    display:grid;
-    justify-content: center;
-    margin:15px;
-    margin-top: 10px;
-    font-size: 20px;
-}
-.box select{
-    background: #2f3640;
-    color: antiquewhite;
-    padding: 10px;
-    width: 250px;
-    margin-top: 5px;
-    font-size: 15px;
-    border: none;
-    border-radius: 7pt;
-    outline: none;
-    z-index:1;
-}
-p{
-    text-align: center;
-    font-size: 25px;
-}
-/*Analog clock styling*/
-#clock{
-    width: 80%;
-    margin: auto;
-    margin-top: 20px;
-    font-size: 70px;
-    border: 2px solid black;
-    align-items: center;
-    text-align: center;
-    align-items: center;
-    color: black;
-}
-/*Map Styling*/
-#map{
-    width: 70%x;
-    height: 400px;
-    padding: 18px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 100px;
-}
-/*Footer section*/
-footer{
-    width:auto;
-    height: 100px;
-    background-color : black;
-    font-size:30px;
-}
-.footer{
-    text-align: center;
-    color:rgb(51, 153, 255);
-}
-.footer .contact span{
-    font-size: 30px;
-    border-bottom: 1px solid gray;
-}
-a .fa{
-    font-size: 30px;
-    color:rgb(51, 153, 255);
-    width:40px;
-    height: 40px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    padding:1px;
-    margin:10px 10px 5px 10px;
-}
-select{
-    overflow-y: auto;
-}
-#alignment{
-    display: flex;
-	flex-direction: row;
-	align-items: center;
-	height: 600px;
+  margin-top: 30px;
 }
 
-.india, .japan, .chicago{
-    display: flex;
-	flex-direction: column;
-	justify-content: center;
-	gap:20px;
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: rgb(31, 27, 27);
+  color: #f1f1f1;
+  justify-content: center;
+  z-index: 10;
 }
-.analog-country{
-    display:flex;
-	flex-direction: column;
-	align-items: center;
-	padding:10px;
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	font-size: 20px;
-	color: white;
+
+.underline {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: #f2a365;
 }
-.analog-country h3{
-    border-bottom: 1px solid aliceblue;
-	margin-bottom:10px
+
+.box {
+  display: grid;
+  justify-content: center;
+  margin: 15px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.box select {
+  background: #2f3640;
+  color: antiquewhite;
+  padding: 10px;
+  width: 250px;
+  margin-top: 5px;
+  font-size: 15px;
+  border: none;
+  border-radius: 7pt;
+  outline: none;
+  z-index: 1;
+}
+
+p {
+  text-align: center;
+  font-size: 25px;
+}
+
+/*Analog clock styling*/
+
+#clock {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 70px;
+  border: 2px solid black;
+  align-items: center;
+  text-align: center;
+  align-items: center;
+  color: black;
+}
+
+@media screen and (max-width: 767px) {
+  #clock {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #clock {
+    font-size: 3rem;
+  }
+}
+
+/*Map Styling*/
+
+#map {
+  height: 400px;
+  padding: 18px;
+  margin: 0;
+}
+
+/*Footer section*/
+
+footer {
+  width: auto;
+  margin-top: 2rem;
+  height: 100px;
+  background-color: black;
+  font-size: 30px;
+}
+
+.footer {
+  text-align: center;
+  color: rgb(51, 153, 255);
+}
+
+.footer .contact span {
+  font-size: 30px;
+  border-bottom: 1px solid gray;
+}
+
+a .fa {
+  font-size: 30px;
+  color: rgb(51, 153, 255);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  padding: 1px;
+  margin: 10px 10px 5px 10px;
+}
+
+select {
+  overflow-y: auto;
+}
+
+#alignment {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.india,
+.japan,
+.chicago {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.analog-country {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  color: white;
+}
+
+.analog-country h3 {
+  text-align: center;
+  border-bottom: 1px solid aliceblue;
+  margin-bottom: 10px;
 }
 
 /*FAQs section*/
-.faq{
-    color: #ececec;
-    text-decoration: underline;
-    text-decoration-color: #f2a365;
-    font-size: 30px;
-}
-h1 {
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    font-size: 65px;
-    margin: 50px 0 0;
-    color: #fff;
+
+.faq-section {
+  padding-bottom: 2rem;
 }
 
-.container {
-    max-width: 60%;
-    margin: 0 auto;
-    padding: 5px 0 20px;
-    width: 100%;
+.faq {
+  color: #ececec;
+  text-decoration: underline;
+  text-decoration-color: #f2a365;
+  font-size: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 65px;
+  color: #fff;
 }
 
 .acc h3 {
-    font-size: 30px;
-    background-color: rgba(0,0,0,0.6);
-    color: #fff;
-    padding: 15px;
-    margin: 0;
-    cursor: pointer;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 2px;
-    position: relative;
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 15px;
+  margin: 0;
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-right: 2rem;
 }
 
 .acc h3:after {
-    content: '+';
-    position: absolute;
-    right: 20px;
-    font-size: 40px;
-    top: 50%;
-    transform: translateY(-50%);
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 40px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .acc.active h3:after {
-	content: '-';
+  content: "-";
+}
+
+@media screen and (max-width: 767px) {
+  .acc h3 {
+    font-size: 16px;
+  }
+  .acc h3:after {
+    content: "+";
+    right: 10px;
+    font-size: 20px;
+  }
+  .acc.active h3:after {
+    content: "-";
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .acc h3 {
+    font-size: 18px;
+  }
 }
 
 .content {
-    background-color: #fff;
-    display: none;
+  background-color: #fff;
+  display: none;
 }
 
 .content-inner {
-    padding: 15px;
+  padding: 15px;
 }
 
 .content * {
-    margin-top: 0;
-    line-height: 1.5;
+  margin-top: 0;
+  line-height: 1.5;
 }
 
 .acc {
-    border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
-.modal{
-    display: none;
-    text-align: center;
-    position : fixed;
-    top:0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.4);
+.modal {
+  display: none;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal-content{
-    background:linear-gradient(rgba(255, 255, 255,0.8),rgba(102, 204, 255,0.8));
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    border-radius: 1em;
-    width: 30%;
+.modal-content {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.8),
+    rgba(102, 204, 255, 0.8)
+  );
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 1em;
+  width: 50%;
 }
 
-.close{
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+@media screen and (max-width: 767px) {
+  .modal-content {
+    width: 90%;
+  }
 }
 
-.select{
-    margin-top: 20px;
-    margin-bottom: 0;
-    color: white;
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .modal-content {
+    width: 75%;
+  }
 }
 
-#country-name{
-    font-size: 28px;
-    font-family: 'Alef','sans-serif';
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.select {
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: white;
+}
+
+#country-name {
+  font-size: 28px;
+  font-family: "Alef", "sans-serif";
+}
+
+/* Responsiveness */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
