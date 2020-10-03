@@ -8,6 +8,7 @@
 			type="image/x-icon"
 			href="docs/images/favicon.ico"
 		/>
+		<link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 		<link
 			rel="stylesheet"
@@ -39,21 +40,30 @@
 		</header>
 		<nav class="navigation_bar">
 			<ul class="nav">
+				<div class="select">Select a Country</div>
 				<div class="box">
 					<select id="list">
-						<option value="india">India</option>
-						<option value="california">California</option>
-						<option value="newYork">New York(U.S.A)</option>
-						<option value="japan">Japan</option>
-						<option value="uae">United Arab Emirates(U.A.E)</option>
-						<option value="moscow">Moscow(Russia)</option>
-						<option value="france">France</option>
-						<option value="africa">Africa(central)</option>
+						<option class="country" value="india">India</option>
+						<option  class="country" value="california">California</option>
+						<option  class="country" value="newYork">New York(U.S.A)</option>
+						<option  class="country" value="japan">Japan</option>
+						<option  class="country" value="uae">United Arab Emirates(U.A.E)</option>
+						<option  class="country" value="moscow">Moscow(Russia)</option>
+						<option  class="country" value="france">France</option>
+						<option  class="country" value="africa">Africa(central)</option>
 					</select>
 				</div>
 			</ul>
 		</nav>
-		<div id="clock">10:10:01</div>
+		<div id="modal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<div id="country-name">
+				</div>
+				<div id="clock">10:10:01</div>
+			</div>
+		</div>
+		
 
 		<!-- analog clock -->
 		<div id="alignment">
