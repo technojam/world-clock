@@ -132,7 +132,7 @@ h1 {
 }
 
 .faq{
-    color: #ececec;  
+    color: #ececec;
     text-decoration: underline;
     text-decoration-color: #f2a365;
     font-size: 30px;
@@ -230,4 +230,3 @@ a .fa{
 
 a .fa:hover {
     color: #ddd;
-}
