@@ -30,10 +30,10 @@ function showTime() {
 	var res = nd.toLocaleString();
 	res = res.split(" ");
 	var ans = res[1].split(":");
-
-	if (ans[0] > 12) {
-		var t = parseInt(ans[0]) - 12;
-		ans[0] = t.toString();
+	var hours = nd.getHours();
+	if (hours >= 12) {
+		hours = hours % 12;
+		ans[0] = hours.toString();
 		session = "PM";
 	}
 
