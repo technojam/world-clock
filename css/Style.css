@@ -3,13 +3,16 @@
     #f2a365 -- orange peace for headings or underlines 
     #ececec -- white compulsory
 */
-@import url("clock_styling.css");
+@import url("clock_styling.css");/*import analog clock css*/
 *{
     margin: 0%;
     padding: 0%;
 }
 body{
     background-color: #222831;
+    margin: 0;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
 }
 nav{
     height: 100px;
@@ -81,15 +84,9 @@ header {
 }
 p{
     text-align: center;
-    font-size: 50px;
+    font-size: 25px;
 }
-.faq{
-    color: #ececec;
-    margin: 5%;
-    text-decoration: underline;
-    text-decoration-color: #f2a365;
-    font-size: 30px;
-}
+/*Analog clock styling*/
 #clock{
     width: 35%;
     margin: auto;
@@ -101,6 +98,7 @@ p{
     align-items: center;
     color: white;
 }
+/*Map Styling*/
 #map{
     width: 70%x;
     height: 400px;
@@ -109,7 +107,7 @@ p{
     margin-right: 100px;
     margin-bottom: 100px;
 }
-
+/*Footer section*/
 footer{
     width:auto;
     height: 100px;
@@ -139,20 +137,20 @@ select{
     overflow-y: auto;
 }
 #alignment{
-	display: flex;
+    display: flex;
 	flex-direction: row;
 	align-items: center;
 	height: 600px;
 }
 
 .india, .japan, .chicago{
-	display: flex;
+    display: flex;
 	flex-direction: column;
 	justify-content: center;
 	gap:20px;
 }
 .analog-country{
-	display:flex;
+    display:flex;
 	flex-direction: column;
 	align-items: center;
 	padding:10px;
@@ -161,6 +159,72 @@ select{
 	color: white;
 }
 .analog-country h3{
-	border-bottom: 1px solid aliceblue;
+    border-bottom: 1px solid aliceblue;
 	margin-bottom:10px
+}
+
+/*FAQs section*/
+.faq{
+    color: #ececec;
+    
+    text-decoration: underline;
+    text-decoration-color: #f2a365;
+    font-size: 30px;
+}
+h1 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 65px;
+    margin: 50px 0 0;
+    color: #fff;
+}
+
+.container {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 5px 0 20px;
+    width: 100%;
+}
+
+.acc h3 {
+    font-size: 30px;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 15px;
+    margin: 0;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.acc h3:after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.acc.active h3:after {
+	content: '-';
+}
+
+.content {
+    background-color: #fff;
+    display: none;
+}
+
+.content-inner {
+    padding: 15px;
+}
+
+.content * {
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+.acc {
+    border-bottom: 1px solid #fff;
 }
