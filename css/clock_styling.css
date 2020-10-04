@@ -5,8 +5,8 @@
 }
 
 .analog {
-	width: 300px;
-	height: 300px;
+	width: 250px;
+	height: 250px;
 	border-radius: 50%;
 	background-color: aliceblue;
 	border: 2px solid pink;
@@ -97,17 +97,4 @@
 	width: 10px;
 	height: 35%;
 	background-color: black;
-}
-
-.clocks{
-	display: flex;
-	justify-content: space-evenly;
-	margin: 10%;
-}
-.clock{
-	height:500px;
-	padding:50px;
-	margin:50px;
-	border:1px solid white;
-	border-radius: 1em;
 }
