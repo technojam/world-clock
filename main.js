@@ -1,7 +1,7 @@
 //Dropdown menu
 function showTime() {
-	d = new Date(); //Getting the local date object
-
+		d = new Date(); //Getting the local date object
+	
 	countryName = document.getElementById('country-name')
 
 	utc = d.getTime() + d.getTimezoneOffset() * 60000; //converting the time to gmt and in miliseconds for easier conversion of time for different countries
@@ -69,9 +69,35 @@ function showTime() {
 	document.getElementById("clock").innerHTML = res[1] + " " + session;
 	
 	setTimeout(showTime, 1000);
+	
+	//If the current time is between 7 PM to 7AM UI changes to dark mode. 
+	var ti = nd.toString();
+    ti = ti.split(" ");
+    var ri = ti[4].split(":");
+	if(ri[0]<=18 && ri[0]>7){
+		//Light Mode
+		var element = document.createElement("link");
+		element.setAttribute("rel", "stylesheet");
+		element.setAttribute("type", "text/css");
+		element.setAttribute("href", "css/light.css");
+		document.getElementsByTagName("head")[0].appendChild(element);
+	}else{
+		//Dark Mode
+		var element = document.createElement("link");
+        element.setAttribute("rel", "stylesheet");
+        element.setAttribute("type", "text/css");
+        element.setAttribute("href", "css/Style.css");
+        document.getElementsByTagName("head")[0].appendChild(element);
+    }
 }
 showTime();
 
+//Scroll the list of countries
+document.getElementById("list").addEventListener("scroll", scroll);
+
+function scroll() {
+    document.getElementsByClassName("box").innerHTML = "Scrolled";
+    }
 
 //Analog Clock
 setInterval(setClock, 1000);
