@@ -1,0 +1,234 @@
+/*  #222831 -- darkest blue
+    #30475e -- medium blue
+    #f2a365 -- orange peace for headings or underlines 
+    #ececec -- white compulsory
+*/
+@import url("clock_styling.css");/*import analog clock css*/
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: #fff;
+    margin: 0;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    height: 100px;
+    display: block;
+    width: auto;
+    margin: 0 ;
+    text-transform: uppercase;
+    background-color: #00BFFF;
+    text-align: center;
+    border: 1px solid black;
+}
+.nav{
+    color: white;
+}
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #006D92;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.main {
+    margin-top: 30px; 
+}
+header {
+    padding: 50px 16px 10px;
+    background: #00BFFF;
+    color: #f1f1f1;
+    text-align: center;
+    }
+.underline{
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #f2a365;
+}
+.box{
+    display:grid;
+    justify-content: center;
+    margin:15px;
+    font-size: 20px;
+}
+.box select{
+    background: #2f3640;
+    color: antiquewhite;
+    padding: 10px;
+    width: 250px;
+    margin-top: 5px;
+    font-size: 15px;
+    border: none;
+    border-radius: 7pt;
+    outline: none;
+    z-index:1;
+}
+p{
+    text-align: center;
+    font-size: 25px;
+}
+/*Analog clock styling*/
+#clock{
+    width: 35%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 70px;
+    border: 2px solid #00BFFF;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    color: black;
+}
+.clock{
+    border: 2px solid #00BFFF;
+}
+/*Map Styling*/
+#map{
+    width: 70%x;
+    height: 400px;
+    padding: 18px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+/*Footer section*/
+footer{
+    width:auto;
+    height: 100px;
+    background-color :#00BFFF;
+    font-size:30px;
+}
+.footer{
+    text-align: center;
+    color:white;
+}
+.footer .contact span{
+    font-size: 30px;
+    border-bottom: 1px solid white;
+}
+a .fa{
+    font-size: 30px;
+    color:white;
+    width:40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    padding:1px;
+    margin:10px 10px 5px 10px;
+}
+select{
+    overflow-y: auto;
+}
+#alignment{
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 600px;
+}
+
+.india, .japan, .chicago{
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap:20px;
+}
+.analog-country{
+    display:flex;
+	flex-direction: column;
+	align-items: center;
+	padding:10px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 20px;
+	color: black;
+}
+.analog-country h3{
+    border-bottom: 1px solid #00BFFF;
+	margin-bottom:10px
+}
+
+/*FAQs section*/
+.faq{
+    color: black;
+    
+    text-decoration: underline;
+    text-decoration-color: #f2a365;
+    font-size: 30px;
+}
+h1 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 65px;
+    margin: 50px 0 0;
+    color: #fff;
+}
+
+.container {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 5px 0 20px;
+    width: 100%;
+}
+
+.acc h3 {
+    font-size: 30px;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 15px;
+    margin: 0;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.acc h3:after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.acc.active h3:after {
+	content: '-';
+}
+
+.content {
+    background-color: #fff;
+    display: none;
+    border:2px solid #00BFFF;
+}
+
+.content-inner {
+    padding: 15px;
+}
+
+.content * {
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+.acc {
+    border-bottom: 1px solid #fff;
+}
