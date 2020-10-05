@@ -149,7 +149,7 @@ select{
 	height: 600px;
 }
 
-.india, .japan, .chicago{
+.japan, .chicago{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
