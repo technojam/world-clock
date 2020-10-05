@@ -20,6 +20,7 @@
 			integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
 			crossorigin=""
 		></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 		<link rel="stylesheet" href="./css/Style.css" />
 		<script src="map.js"></script>
 		<title>World Clock</title>
@@ -33,6 +34,7 @@
 		</div>
 		<header>
 			<h1>
+				<br />
 				JS-World<br />
 				<span class="underline">Clock</span>
 			</h1>
@@ -77,32 +79,9 @@
 						<div class="number number12">12</div>
 					</div>
 					<div class="analog-country">
-						<h3>India (UTC Standard)</h3>
-						<img class="flag" src="./images/INDIA FLAG.webp" alt="indian-flag" width="70px" height="50px" /> 
-					</div>	
-				</div>
-				<div class="chicago clock">
-					<div class="analog">
-						<div class="hand hour" chicago-hour-hand=""></div>
-						<div class="hand minute" chicago-minute-hand></div>
-						<div class="hand second" chicago-second-hand></div>
-						<div class="number number1">1</div>
-						<div class="number number2">2</div>
-						<div class="number number3">3</div>
-						<div class="number number4">4</div>
-						<div class="number number5">5</div>
-						<div class="number number6">6</div>
-						<div class="number number7">7</div>
-						<div class="number number8">8</div>
-						<div class="number number9">9</div>
-						<div class="number number10">10</div>
-						<div class="number number11">11</div>
-						<div class="number number12">12</div>
-					</div>
-					<div class="analog-country">
 						<h3>Chicago (U.S.A)</h3>
-						<img class="flag" src="./images/usa.jpg" alt="usa-flag" width="70px" height="50px" /> 
-					</div>	
+						<img class="flag" src="./images/usa.jpg" alt="usa-flag" width="70px" height="50px" />
+					</div>
 				</div>
 				<div class="japan clock">
 					<div class="analog">
@@ -124,8 +103,8 @@
 					</div>
 					<div class="analog-country">
 						<h3>Japan</h3>
-						<img class="flag" src="./images/japan.svg.png" alt="japan-flag" width="70px" height="50px" /> 
-					</div>	
+						<img class="flag" src="./images/japan.svg.png" alt="japan-flag" width="70px" height="50px" />
+					</div>
 				</div>
 			</div>
 		</div>
@@ -140,6 +119,7 @@
 					<span>Contact Us</span>
 				</div>
 				<div class="social-media">
+
 					<a  href="https://www.facebook.com/teamtechnojam" target="_blank"><i class="fa fa-facebook"></i></a>
 					<a  href="https://www.linkedin.com/company/technojam/" target="_blank"><i class="fa fa-linkedin"></i></a>
 					<a  href="https://twitter.com/technojam_gu" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -148,6 +128,9 @@
 			</div>
 		</footer>
 	</body>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+ 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 	<script>
 		var mymap = L.map("map").setView([51.505, -0.09], 8); //13
 

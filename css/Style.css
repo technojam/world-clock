@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 /*  #222831 -- darkest blue
     #30475e -- medium blue
-    #f2a365 -- orange peace for headings or underlines 
+    #f2a365 -- orange peace for headings or underlines
     #ececec -- white compulsory
 */
 @import url("clock_styling.css");
 *{
+    font-family: 'Montserrat', sans-serif;
     margin: 0%;
     padding: 0%;
 }
@@ -28,9 +30,9 @@ nav{
 .navbar {
     overflow: hidden;
     background-color: #333;
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .navbar a {
@@ -48,13 +50,14 @@ nav{
 }
 
 .main {
-    margin-top: 30px; 
+    margin-top: 30px;
 }
 header {
     padding: 50px 16px 10px;
-    background: rgb(31, 27, 27);
+    background-color: black;
     color: #f1f1f1;
     text-align: center;
+
     }
 .underline{
     text-decoration: underline;
@@ -62,7 +65,7 @@ header {
     text-decoration-color: #f2a365;
 }
 .box{
-    display:grid;
+    display: inline;
     justify-content: center;
     margin:15px;
     font-size: 20px;
@@ -115,6 +118,7 @@ footer{
     height: 100px;
     background-color : black;
     font-size:30px;
+
 }
 .footer{
     text-align: center;
