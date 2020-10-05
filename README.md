@@ -78,3 +78,5 @@ dropdown list. It shows the time in digital format.
 
 ![About Page](https://github.com/mohitbhata12/world-clock/blob/master/images/World_clock.png)
 
+![About Page](https://github.com/Aditya-shrivastav/world-clock/blob/master/images/world-clock-modal.png)
+
