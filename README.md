@@ -47,9 +47,9 @@ dropdown list. It shows the time in digital format.
 - Navigate to the path where you downloaded the repo
 - Open index.html with the browser
 
-## Screenshots
 
-![About Page](./Screenshots/world-clock-ss.png)
+
+
 
 # world-clock
 
