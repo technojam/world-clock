@@ -29,27 +29,6 @@ git push origin master
 
 [description](#description) - [technologies](#technologies) - [installaion](#installation)
 
-## Description
-
-It is a web app which tells the user about the respective countries as one hovers over the world map or select a particular country from the
-dropdown list. It shows the time in digital format.
-
-## Technologies
-
-- HTML
-- CSS
-- JAVASCRIPT
-
-## Installation
-
-- Fork the repo to your remote repo
-- Download the repo to your local system
-- Navigate to the path where you downloaded the repo
-- Open index.html with the browser
-
-
-
-
 
 # world-clock
 
@@ -80,5 +59,5 @@ dropdown list. It shows the time in digital format.
 
 ![About Page](https://github.com/Aditya-shrivastav/world-clock/blob/master/images/world-clock-modal.png)
 
-![worldclock](./Screenshots/Light mode.png)
+![worldclock](./Screenshots/Light-mode.png)
 
