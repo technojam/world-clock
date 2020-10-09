@@ -37,16 +37,34 @@ function showTime() {
 		countryName.innerHTML = 'Africa';
 		nd = new Date(utc + 3600000 * 2);
 	}else if (checkDropdown == "afghanistan"){
+		countryName.innerHTML = 'Afghanistan';
 		nd = new Date(utc + 3600000 * 4.5);
 	}else if (checkDropdown == "belgium"){
+		countryName.innerHTML = 'Belgium';
 		nd = new Date(utc + 3600000 * 1);
 	}else if (checkDropdown == "denmark"){
+		countryName.innerHTML = 'Denmark';
 		nd = new Date(utc + 3600000 * 1);
 	}else if (checkDropdown == "jamaica"){
+		countryName.innerHTML = 'Jamaica';
 		nd = new Date(utc + 3600000 * -5);
 	}else if (checkDropdown == "china"){
+		countryName.innerHTML = 'China';
 		nd = new Date(utc + 3600000 * 8);
-	}			
+	}else if(checkDropdown == "malasiya"){
+		countryName.innerHTML = 'Malasiya';
+		nd = new Date(utc + 3600000 * 8);
+	}else if(checkDropdown == "thailand"){
+		countryName.innerHTML = 'Thailand';
+		nd = new Date(utc + 3600000 * 7);
+	}else if(checkDropdown == "pakisitan"){
+		countryName.innerHTML = 'Pakistan';
+		nd = new Date(utc + 3600000 * 5);
+	}else if(checkDropdown == "chicago"){
+		countryName.innerHTML = 'Chicago';
+		nd = new Date(utc + 3600000 * -5);
+	}
+			
 
 	// Changed the timming in 12 hours format
 	var res = nd.toLocaleString();
@@ -167,8 +185,11 @@ span.onclick = function(){
 	modal.style.display = "none";
 }
 
-btn.onclick = function(){
-	modal.style.display = "block";
+btn.onchange = function(){
+	const select = document.getElementById('list');
+	if (select) {
+		modal.style.display = "block";
+	}
 }
 
 window.onclick = function(event) {

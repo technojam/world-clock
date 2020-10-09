@@ -104,6 +104,13 @@ p {
   align-items: center;
   color: black;
 }
+.clock{
+	height:500px;
+	padding:50px;
+	margin:50px;
+	border:1px solid white;
+	border-radius: 1em;
+}
 /*Map Styling*/
 #map {
   width: 70%x;
@@ -266,6 +273,7 @@ h1 {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  cursor: default;
 }
 
 .select {

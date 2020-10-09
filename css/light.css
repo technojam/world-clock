@@ -88,19 +88,24 @@ p{
 }
 /*Analog clock styling*/
 #clock{
-    width: 35%;
+    width: 80%;
     margin: auto;
     margin-top: 20px;
     font-size: 70px;
-    border: 2px solid #00BFFF;
+    border: 2px solid black;
     align-items: center;
     text-align: center;
     align-items: center;
     color: black;
 }
 .clock{
-    border: 2px solid #00BFFF;
+	height:500px;
+	padding:50px;
+	margin:50px;
+	border:1px solid black;
+	border-radius: 1em;
 }
+
 /*Map Styling*/
 #map{
     width: 70%x;
@@ -139,12 +144,12 @@ a .fa{
 select{
     overflow-y: auto;
 }
-#alignment{
+/*#alignment{
     display: flex;
 	flex-direction: row;
 	align-items: center;
 	height: 600px;
-}
+}*/
 
 .india, .japan, .chicago{
     display: flex;
@@ -232,3 +237,65 @@ h1 {
 .acc {
     border-bottom: 1px solid #fff;
 }
+
+.modal {
+    display: none;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background: linear-gradient( rgba(255, 255, 255, 0.8),rgba(102, 204, 255, 0.8));
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 1em;
+    width: 30%;
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: default;
+  }
+  
+  .select {
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: white;
+  }
+  
+  #country-name {
+    font-size: 28px;
+    font-family: 'Alef', 'sans-serif';
+  }
+
+@media (max-width: 1200px) {
+    .modal-content {
+      width: 50%;
+    }
+    #clock {
+      font-size: 60px;
+    }
+  }
+  @media (max-width: 710px) {
+    .modal-content {
+      width: 70%;
+    }
+    #clock {
+      font-size: 50px;
+    }
+  }
+  @media (max-width: 410px) {
+    #clock {
+      font-size: 30px;
+    }
+  }
