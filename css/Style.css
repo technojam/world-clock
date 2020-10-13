@@ -172,7 +172,7 @@ select {
 }
 
 /*FAQs section*/
-.faq {
+#faq {
   color: #ececec;
   text-decoration: underline;
   text-decoration-color: #f2a365;
