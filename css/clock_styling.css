@@ -99,7 +99,7 @@
   background-color: black;
 }
 
-.clocks {
+#clocks {
   display: flex;
   justify-content: space-evenly;
   margin: 0;
