@@ -1,7 +1,7 @@
 //Dropdown menu
 function showTime() {
 		d = new Date(); //Getting the local date object
-	
+
 	countryName = document.getElementById('country-name')
 
 	utc = d.getTime() + d.getTimezoneOffset() * 60000; //converting the time to gmt and in miliseconds for easier conversion of time for different countries
@@ -46,7 +46,10 @@ function showTime() {
 		nd = new Date(utc + 3600000 * -5);
 	}else if (checkDropdown == "china"){
 		nd = new Date(utc + 3600000 * 8);
-	}			
+	}else if (checkDropdown == "southk"){
+		nd= new Date(utc +3600000 * 9);
+		countryName.innerHtML= ' South Korea';
+	}
 
 	// Changed the timming in 12 hours format
 	var res = nd.toLocaleString();
@@ -67,10 +70,10 @@ function showTime() {
 	res[1] = ans.join(":");
 
 	document.getElementById("clock").innerHTML = res[1] + " " + session;
-	
+
 	setTimeout(showTime, 1000);
-	
-	//If the current time is between 7 PM to 7AM UI changes to dark mode. 
+
+	//If the current time is between 7 PM to 7AM UI changes to dark mode.
 	var ti = nd.toString();
     ti = ti.split(" ");
     var ri = ti[4].split(":");
@@ -116,7 +119,7 @@ const japansecondHand = document.querySelector("[japan-second-hand]");
 
 function setClock() {
 	const indiacurrentDate = new Date();
-	
+
 	const indiasecondsRatio = indiacurrentDate.getSeconds() / 60;
 	const indiaminutesRatio = (indiasecondsRatio + indiacurrentDate.getMinutes()) / 60;
 	const indiahoursRatio = (indiaminutesRatio + indiacurrentDate.getHours()) / 12;
